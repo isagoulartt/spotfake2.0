@@ -74,17 +74,17 @@ const style = StyleSheet.create({
         gap: 10
     },
     logo: {
-        fontSize: 60,
+        fontSize: 40,
         color: '#919191',
         marginBottom: 30,
     },
     text: {
-        fontSize: 45,
+        fontSize: 25,
         color: '#919191',
         marginBottom: 20,
     },
     text2: {
-        fontSize: 35,
+        fontSize: 27,
         color: '#919191',
         marginBottom: 20,
         marginTop: 20,
