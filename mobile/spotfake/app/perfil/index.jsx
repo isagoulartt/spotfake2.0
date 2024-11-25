@@ -86,7 +86,7 @@ import * as ImagePicker from 'expo-image-picker';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#4F2A58',
+    backgroundColor: '#320244',
     padding: 20,
   },
   cabecalho: {

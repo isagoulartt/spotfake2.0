@@ -23,10 +23,6 @@ return (
       <Link style={styles.log} href= "/login">Faça seu login</Link>
 
       <Link style={styles.log} href= "/cadastro">Crie sua conta</Link>
-
-      <Link style={styles.log} href= "/pagamento">pagamento </Link>
-
-      <Link style={styles.log} href= "/perfil">perfil</Link>
     
     </View>
   );
@@ -36,7 +32,7 @@ const styles = StyleSheet.create({
     container:{
       flex: 1,
       alignItems: 'center',
-      backgroundColor:'#4F2A58',
+      backgroundColor:'#320244',
       justifyContent: 'center',
     },
     background:{

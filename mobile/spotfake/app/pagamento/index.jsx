@@ -54,7 +54,7 @@ export default Pagamento = () => {
 const style = StyleSheet.create({
     container: {
         display: 'flex',
-        backgroundColor: '#4F2A58',
+        backgroundColor: '#320244',
         height: '100%',
         width: '100%',  
     },

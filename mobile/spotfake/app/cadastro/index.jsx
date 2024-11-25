@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { View, Text, TextInput, Pressable, StyleSheet, SafeAreaView } from "react-native";
+import {Link} from 'expo-router';
 
 const style = StyleSheet.create({
     
     container: {
       flex: 1, 
-      backgroundColor: "#4F2A58", 
+      backgroundColor: "#320244", 
       padding: 20,
+      justifyContent:'center',
+      alignItems:'center'
        
     },
     box: {
@@ -26,7 +29,7 @@ const style = StyleSheet.create({
       fontWeight: "bold", 
       textAlign: "center", 
       marginBottom: 20, 
-      color:'#b2b2b2'
+      color:'#320244'
     },
     inputView: {
       marginBottom: 20, 
@@ -50,6 +53,32 @@ const style = StyleSheet.create({
       padding: 10, 
       borderRadius: 5, 
     },
+    box: {
+        width: "100%",
+        maxWidth: 400,
+        backgroundColor: "#fff",
+        borderRadius: 15,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 6,
+        elevation: 4,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f5f5f5',
+        padding: 20,
+    },
+
+    log: {
+        backgroundColor: '#320244', 
+        paddingVertical: 10,       
+        paddingHorizontal: 20,     
+        borderRadius: 5,           
+        textAlign: 'center',       
+        color: '#fff',           
+        fontSize: 16,             
+     
+      },
   });
 
 export default SinUp = () => {
@@ -87,7 +116,7 @@ export default SinUp = () => {
 
 return (
     <SafeAreaView style={style.container}>
-      
+      <View style={style.box}>
         <View >
             <Text style={style.titulo}>Cadastre-se</Text>
         </View>
@@ -129,12 +158,12 @@ return (
                 secureTextEntry={true}
             />
 
-            <View style={style.botao} >
-                <Pressable onPress={registrarUsuario}>
-                    <Text style={style.botaotexto}>Entrar</Text>
-                </Pressable>
+            <View style={style.botao}>
+            <Pressable onPress={registrarUsuario}>
+            <Link style={style.log} href= "/Home">Cadastre-se</Link>
+            </Pressable>
             </View>
-
+            </View>
             
             </View>
        
