@@ -1,8 +1,6 @@
 import { View, StyleSheet, Image} from 'react-native';
 import {Link} from 'expo-router';
 
-
-
 export default function App() {
 
 const logoSpotify =
@@ -20,37 +18,43 @@ return (
           uri : logoSpotify,
         }}
       />
-      <Link style={styles.log} href= "/login">Faça seu login</Link>
+     
+      <Link style={styles.log1} href= "/login">Faça seu login</Link>
+    
 
-      <Link style={styles.log} href= "/cadastro">Crie sua conta</Link>
+      <Link style={styles.log2} href= "/cadastro">Crie sua conta</Link>
     
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-    container:{
-      flex: 1,
-      alignItems: 'center',
-      backgroundColor:'#320244',
-      justifyContent: 'center',
-    },
-    background:{
-      position: 'absolute',
-      left: 0,
-      right: 0,
-      top: 0,
-      bottom: 0,
-    },
-    logo:{
-      width: 100,
-      height: 100,
-      alignItems:'center',
-      justifyContent:'center'
-    },
-
-    log:{
-      color:"#b2b2b2",
-      alignContent:'center'
-    }
-  });
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '#320244',
+    justifyContent: 'center',
+  },
+  logo: {
+    width: 100,
+    height: 100,
+  },
+  log1: {
+    backgroundColor: "#b2b2b2",
+    color: '#320244',
+    fontSize: 15,
+    borderRadius: 10,
+    padding: 10,
+    margin: 10,
+    textAlign: 'center',
+  },
+  log2: {
+    backgroundColor: "#b2b2b2",
+    color: '#320244',
+    fontSize: 15,
+    borderRadius: 10,
+    padding: 10,
+    margin: 10,
+    textAlign: 'center',
+  },
+});

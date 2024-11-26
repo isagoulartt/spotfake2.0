@@ -20,7 +20,7 @@ export default Pagamento = () => {
         source={require('../../../spotfake/app/img/logo1.png')}/>
         <Text style={style.logo}>AURA</Text>
     </View>
-        <Text style={style.text}>Conta Bancária</Text>
+        <View style={style.box}>
         <Text style={style.text2}>Adicionar Cartão</Text>
         <TextInput 
                 style={style.input}
@@ -46,7 +46,7 @@ export default Pagamento = () => {
                 value={cvv}
                 placeholder=" CVV"
         />
-      
+    </View>
     </View>
     </View>
 }
@@ -90,7 +90,7 @@ const style = StyleSheet.create({
         marginTop: 20,
     },
     input: {
-        border: '1px solid #E8DAEF',
+        border: '1px solid #320244',
         backgroundColor: '#E8DAEF',
         fontSize: 15,
         marginBottom: 15,
@@ -118,4 +118,16 @@ const style = StyleSheet.create({
         color: 'white',
         fontSize: 20,
     },
+    box: {
+        backgroundColor: "#fff", 
+        borderRadius: 10,
+        shadowColor: "#000", 
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 2, 
+       justifyContent:'center',
+       alignItems:'center',
+       backgroundColor:'#f5f5f5'
+      },
 })
