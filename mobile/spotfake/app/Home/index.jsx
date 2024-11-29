@@ -105,8 +105,9 @@ import {Link} from 'expo-router';
     },
     log: {
       backgroundColor: '#b2b2b2',
-      paddingVertical: 12, 
-      paddingHorizontal: 15, 
+      padding:15,
+      marginLeft: 100,
+      marginRight:100, 
       borderRadius: 10, 
       textAlign: 'center',
       color: '#320244',
